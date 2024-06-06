@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fajar Destrada</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="nav-background">
+          <div class="logo">
+            <img src="assets/logo-fd.webp" alt="Logo">
+          </div>
+          <nav>
+            <input type="checkbox" id="nav-toggle" class="nav-toggle"> 
+      
+            <label for="nav-toggle" class="nav-toggle-label">
+              <span></span> <span></span> <span></span> 
+            </label>
+            <ul class="nav-menu">
+              <li><a href="#hero">Home</a></li>
+              <li><a href="#progress">Progress</a></li>
+              <li><a href="#learning">Learning</a></li>
+              <li><a href="#message-us">Message Us</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      
+    <main class="main-background">
+
+        <!--Hero Section-->
+        <section class="hero-background id="hero">
+            <div class="hero-container">
+                <div class="hero">
+                    <h1>Web Mini Project<br>Fajar Destrada</h1>
+                    <p>Ini adalah mini project dari fundamental<br>
+                        course software engineering Revo U<br>
+                        setelah banyak belajar HTML, CSS, JS<br>
+                        tertarik untuk mengikuti perkembangan saya?</p>
+                        <button onclick="window.open('https://www.linkedin.com/in/fajardestrada/', '_blank')"><b>Lets Connect</b></button>
+                </div>
+                <div class="hero-image">
+                    <img src="assets/Foto-Profil.webp" alt="Foto Fajar Destrada">
+                </div>
+            </div>
+        </section>
+
+        <!--Progress Section-->
+        <section class="progress-container" id="progress">
+            <div class="progress">
+                <h1>Progress Pengerjaan</h1>
+                <p>Setelah Banyak Belajar & Mencoba Ini Lah Hasilnya</p>
+                
+                <div class="image-slider">
+                    <div class="slide">
+                        <img src="assets/Progress-1.jpg" alt="Progress 1">
+                    </div>
+                    <div class="slide">
+                        <img src="assets/Progress-2.png" alt="Progress 2">
+                    </div>
+                    <div class="slide">
+                        <img src="assets/Progress-3.png" alt="Progress 3">
+                    </div>
+                    <!-- Add more slides as needed -->
+                    <button class="prev"></button>
+                    <button class="next"></button>
+                </div>
+            </div>
+        </section>
+
+        <!--Learning Section-->
+        <section class="learning-background">
+            <div class="learning" id="learning">
+                <h2>Apa Yang Di Pelajari</h2>
+                <div class="learning-items">
+                    <div class="learning-item">
+                        <div class="circle"><img src="assets/circle-3.png" alt="HTML Logo"></div>
+                        <p>HTML (Hyper Text Markup Language)</p>
+                    </div>
+                    <div class="learning-item">
+                        <div class="circle"><img src="assets/circle-1.png" alt="CSS Logo"></div>
+                        <p>CSS (Cascading Style Sheet)</p>
+                    </div>
+                    <div class="learning-item">
+                        <div class="circle"><img src="assets/circle-2.png" alt="JS Logo"></div>
+                        <p>JS (Java Script)</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!--Message Us Section-->
+        <section class="message-us" id="message-us">
+            <h2>Message Us</h2>
+            <div class="message-container">
+                <form onsubmit="return handleSubmit(event)">
+                    <label for="name">Nama</label>
+                    <input type="text" id="name" name="name" required> 
+                    <label for="dob">Tanggal Lahir</label>
+                    <input type="date" id="dob" name="dob" required>
+                    <label for="gender">Jenis Kelamin</label>
+                    <div class="gender">
+                        <input type="radio" id="male" name="gender" value="Laki-Laki" required>
+                        <label for="male">Laki-Laki</label>
+                        <input type="radio" id="female" name="gender" value="Perempuan" required>
+                        <label for="female">Perempuan</label>
+                    </div>
+                    <label for="message">Pesan</label>
+                    <textarea id="message" name="message" required></textarea> 
+                    <button type="submit">Submit</button>
+                </form>
+                <div class="info">
+                    <p><b>Current Time :</b> 6/6/2024, 11:15:16 AM</p> <br>
+                    <p><b>Nama:</b> Kundu Destrada</p>
+                    <p><b>Tanggal Lahir:</b> 2001-01-01</p>
+                    <p><b>Jenis Kelamin:</b> Laki-Laki</p>
+                    <p><b>Pesan:</b> Sedang Belajar buat Website</p>
+                </div>
+            </div>
+        </section>
+        <button id="back-to-top-btn" title="Back to Top">&uarr;</button>
+        
+    </main>
+
+    <!--Footer Section-->
+    <footer>
+        <p>Created By Fajar Destrada</p>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
